@@ -1,5 +1,7 @@
 <?php 
+
 namespace  Classess;
+require($_SERVER['DOCUMENT_ROOT'].'/Interface/ImageResize.php');
 
 use  Interface\ImageResize;
 

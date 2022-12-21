@@ -1,9 +1,7 @@
 <?php 
+namespace  App\Bi;
 
-namespace  Classess;
-require($_SERVER['DOCUMENT_ROOT'].'/Interface/ImageResize.php');
-
-use  Interface\ImageResize;
+use  App\Interface\ImageResize;
 
 class Canvas implements ImageResize
 {

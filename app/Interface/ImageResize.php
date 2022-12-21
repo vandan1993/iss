@@ -1,5 +1,5 @@
 <?php
-namespace  Interface;
+namespace  App\Interface;
 
 interface ImageResize {
 

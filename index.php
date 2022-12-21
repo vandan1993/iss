@@ -2,6 +2,6 @@
 require(dirname(__FILE__) . '/Classes/Canvas.php');
 use Classess\Canvas;
 
-$animal = new Canvas();
-$animal->contain();
-$animal->cover();
+$constructImage = new Canvas();
+$constructImage->contain();
+$constructImage->cover();

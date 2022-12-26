@@ -6,8 +6,12 @@ use App\Bi\Contain;
 use App\Bi\Cover;
 
 
-
-
+/**
+ * ==================================
+ * For Contain Implementation
+ * =================================
+ * 
+ */
 
 $constructImage = new Canvas(new Contain);
 
@@ -32,8 +36,14 @@ $contain = $constructImage->checkForRezise($imageA , $imageB);
 echo($contain );
 
 
-$constructImage = new Canvas(new Cover);
+/**
+ * ==================================
+ * For Cover Implementation
+ * =================================
+ * 
+ */
 
+$constructImage = new Canvas(new Cover);
 
 $imageA = ['width' => 250, 'height' => 500];
 $imageB = ['width' => 500, 'height' => 90];

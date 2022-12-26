@@ -1,6 +1,6 @@
 ## Resize Width and Height of a Canvas/Image Test for ISS Governance
 
-## Built with
+## Built In
 
 - PHP 8.1
 - Composer 2
@@ -18,6 +18,8 @@
 
 ## How Run application 
 In `/iss` folder excute  php -S 127.0.0.1:7000
+
+`Note :- No need to run composer install as all vendor code is commited .`
 
 ## Main File of execution
 

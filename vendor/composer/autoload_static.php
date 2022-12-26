@@ -21,8 +21,6 @@ class ComposerStaticInitda36ff58647d9a3d0d21f8bac2e52165
     );
 
     public static $classMap = array (
-        'App\\Bi\\Canvas' => __DIR__ . '/../..' . '/app/Bi/Canvas.php',
-        'App\\Interface\\ImageResize' => __DIR__ . '/../..' . '/app/Interface/ImageResize.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 

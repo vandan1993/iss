@@ -11,6 +11,9 @@ class Contain  implements ImageResize
 
     public function resize($imageA , $imageB)
     {
+        // $this->pdump( $imageA , "iA");
+        // $this->pdump( $imageB , "iB");
+
         $status = true;
         $message = "Success";
        
@@ -23,10 +26,11 @@ class Contain  implements ImageResize
         $newImageB = ["height" => 0 , "width" => 0] ;
 
         //check for aspect ration for b 
+        $aspectRatioForImageA = $this->aspectRatio($imageA["width"] , $imageA["height"]);
         $aspectRatioForImageB = $this->aspectRatio($imageB["width"] , $imageB["height"]);
-        //$this->pdump( $aspectRatioForImageB , "aspectRatioForImageB");
-
-        //if both are greater 
+        $newImageB = ["height" =>  $imageB["height"] * $aspectRatioForImageA ,
+         "width" => $imageB["width"] * $aspectRatioForImageA ];
+/**         //if both are greater 
         if($imageB["height"] > $imageA["height"] &&  $imageB["width"] > $imageA["width"] )
         {
             $newImageB["height"] = round($imageA["width"] * $aspectRatioForImageB);
@@ -51,7 +55,7 @@ class Contain  implements ImageResize
             $status = false;
             $message = "Cannot Rezise using Contain condition";       
         }
-
+*/
         $data =  ["status" => $status , "message" => $message , "data" => $newImageB];
 
         $arr = ["name" => "Contain"  , "colorString" => "#fd5800"];
